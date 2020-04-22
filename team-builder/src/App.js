@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import {team} from './data';
+import team from './data';
 import './App.css';
 import TeamForm from './components/Form';
+import { Container, Row } from 'reactstrap';
+import CardList from "./components/CardList";
+import powerGroup from "./assets/photos/powerGroup.png";
 
 
 const initialFormValues ={
@@ -16,6 +19,7 @@ const initialFormValues ={
 function App() {
   const [members, setMembers] = useState(team);
   const [formValues, setFormValues] = useState(initialFormValues);
+  
 
 const onChangeHandler = event => {
     setFormValues({
@@ -43,15 +47,28 @@ const submitHandler = event => {
   return (
     <div className="App">
       <header><h1>Exo Team Roster</h1></header>
-      {
-        //map through members here and spit out into card
-      }
-      <TeamForm 
-      values={formValues}
-      onChangeHandler={onChangeHandler}
-      submitHandler={submitHandler}
-      />
+      <img width='70%' id="power" src={powerGroup} />
+      <Container id="top">
+        <TeamForm 
+        values={formValues}
+        onChangeHandler={onChangeHandler}
+        submitHandler={submitHandler}
+        />
+      </Container>
 
+      <Container>
+        <Row>
+      {
+        members.map(person => {
+          return (
+            <CardList key={person.id} details={person}/>
+            )//map through members here and spit out into card
+      })
+      }
+        </Row>
+      </Container>
+
+      
     </div>
   );
 }

@@ -29,7 +29,7 @@ const {values, onChangeHandler, submitHandler} = props
             </label>
 
             <label>
-                Instagram:
+                Instagram @:
                 <input                
                 name="insta"
                 onChange={onChangeHandler}
@@ -42,22 +42,22 @@ const {values, onChangeHandler, submitHandler} = props
             <label>
                 Choose a Power:
                 <select name="power" value={values.power} onChange={onChangeHandler}>
-                    <option value="null">Choose a power</option>
-                    <option value="Earth">Earth</option>
-                    <option value="Fire">Fire</option>
-                    <option value="Flight">Flight</option>
-                    <option value="Frost">Frost</option>
-                    <option value="Healing">Healing</option>          
-                    <option value="Light">Light</option>
-                    <option value="Lightning">Lightning</option>
-                    <option value="Telekinesis">Telekinesis</option>
-                    <option value="Teleportation">Teleportation</option>
-                    <option value="Time Control">Time Control</option>
-                    <option value="Wind">Wind</option>
+                    <option value="null">Please choose an option</option>
+                    <option value="earth">Earth</option>
+                    <option value="fire">Fire</option>
+                    <option value="flight">Flight</option>
+                    <option value="frost">Frost</option>
+                    <option value="healing">Healing</option>          
+                    <option value="light">Light</option>
+                    <option value="lightning">Lightning</option>
+                    <option value="telekinesis">Telekinesis</option>
+                    <option value="teleportation">Teleportation</option>
+                    <option value="time control">Time Control</option>
+                    <option value="wind">Wind</option>
                 </select>
             </label>
                 
-            <p>Select member position</p> 
+            <p>Select member position: </p> 
             <div>
                     <input
                     name="position"
@@ -65,54 +65,50 @@ const {values, onChangeHandler, submitHandler} = props
                     type="radio"
                     value="Dancer"
                     />
-                    <label for="Dancer">Dancer</label>
-                </div>
-                <div>
+                    <label>Dancer</label>
+                
                     <input
                     name="position"
                     onChange={onChangeHandler}
                     type="radio"
                     value="Leader"
                     />
-                    <label for="Leader">Leader</label>
-                </div>
-                <div>
+                    <label>Leader</label>
+                
                     <input
                     name="position"
                     onChange={onChangeHandler}
                     type="radio"
                     value="Maknae"
                     />
-                    <label for="Maknae">Maknae</label>
-                </div>
-                <div>
+                    <label>Maknae</label>
+                
                     <input
                     name="position"
                     onChange={onChangeHandler}
                     type="radio"
-                    value="Vocalist"
+                    value="Rapper"
                     />
-                    <label for="Vocalist">Vocalist</label>
-                </div>
-                <div>
+                    <label>Rapper</label>
+                
                     <input
                     name="position"
                     onChange={onChangeHandler}
                     type="radio"
                     value="Visual"
                     />
-                    <label for="Visual">Visual</label>
-                </div>
-                <div>
+                    <label>Visual</label>
+                
                     <input
                     name="position"
                     onChange={onChangeHandler}
                     type="radio"
                     value="Vocalist"
                     />
-                    <label for="Vocalist">Vocalist</label>
+                    <label>Vocalist</label>
                 </div>
 
+                <button type="submit">Submit</button>
         </form>
     )
 }

@@ -5,7 +5,7 @@ const team = [
         stageName: 'Suho',
         power: 'Water',
         position: 'Leader Nim',
-        insta: '@kimjuncotton'
+        insta: 'kimjuncotton'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const team = [
         stageName: 'Baekhyun',
         power: 'Light',
         position: 'Vocalist',
-        insta: '@baekhyunee7'
+        insta: 'baekhyunee7'
     }, 
     {
         id: 3,
@@ -21,7 +21,7 @@ const team = [
         stageName: 'Chanyeol',
         power: 'Fire',
         position: 'Rapper',
-        insta: '@real_pcy'
+        insta: 'real_pcy'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const team = [
         stageName: 'D.O.',
         power: 'Force',
         position: 'Vocalist',
-        insta: '@evil_soo'
+        insta: 'evil_soo'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const team = [
         stageName: 'Kai',
         power: 'Teleportation',
         position: 'Main Dancer',
-        insta: '@zkdlin'
+        insta: 'zkdlin'
     }
 ]
 
